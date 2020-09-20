@@ -1,0 +1,23 @@
+{
+  "name": "calories_tracker",
+  "version": "1.0.0",
+  "description": "Calculate calories",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Stephenlaye2/calorie_tracker_app.git"
+  },
+  "keywords": [
+    "Calories",
+    "Tracker",
+    "App"
+  ],
+  "author": "Ayebogbon Stephen Orowole",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  }
+}

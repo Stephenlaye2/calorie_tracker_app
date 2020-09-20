@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Fontawesome Reference -->
+    <script
+      src="https://kit.fontawesome.com/0e2bf05607.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Calorie Tracker</title>
+  </head>
+  <body>
+    <div class="heading">
+      <div class="container">
+        <h1 class="text-center">Calories Tracker</h1>
+      </div>
+    </div>
+    <div class="container">
+      <div class="card">
+        <div class="card-body">
+          <div class="input-group">
+            <div class="mealInput">
+              <label for="meal-input" class="meal-label">Meal</label>
+              <input type="text" id="meal-input" placeholder="Add meal" />
+            </div>
+            <div class="caloriesInput">
+              <label for="calories-input" class="calories-label"
+                >Calories</label
+              >
+              <input
+                type="number"
+                id="calories-input"
+                placeholder="Add Calories"
+              />
+            </div>
+          </div>
+          <p class="add-message text-center">
+            Select the meal you wish to add to the meal menu.
+          </p>
+          <div class="add-buttons">
+            <button class="btn bg-breakfast" id="breakfast-btn">
+              <i class="fa fa-plus">Add Breakfast</i>
+            </button>
+            <button class="btn bg-lunch" id="lunch-btn">
+              <i class="fas fa-plus">Add Lunch</i>
+            </button>
+            <button class="btn bg-dinner" id="dinner-btn">
+              <div class="fas fa-plus">Add Dinner</div>
+            </button>
+          </div>
+          <div class="delete-update-back-btn">
+            <div class="delete-update-btn">
+              <button class="update-breakfast-btn bg-update">
+                <i class="fa fa-pencil-square-o"> Update</i>
+              </button>
+              <button class="delete-breakfast-btn bg-delete">
+                <i class="fa fa-remove"> Delete</i>
+              </button>
+              <button class="update-lunch-btn bg-update">
+                <i class="fa fa-pencil-square-o"> Update</i>
+              </button>
+              <button class="delete-lunch-btn bg-delete">
+                <i class="fa fa-remove"> Delete</i>
+              </button>
+              <button class="update-dinner-btn bg-update">
+                <i class="fa fa-pencil-square-o"> Update</i>
+              </button>
+              <button class="delete-dinner-btn bg-delete">
+                <i class="fa fa-remove"> Delete</i>
+              </button>
+            </div>
+            <div class="bgDinner text-center">
+              <button class="back-btn bg-dinner">
+                <i class="fa fa-chevron-circle-left"> Back</i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="text-center">Your Meal List: Select a list to show</h2>
+          <div class="list-buttons">
+            <button class="btn breakfast-btn-list bg-breakfast">
+              Breakfast Meal
+            </button>
+            <button class="btn lunch-btn-list bg-lunch">Lunch Meal</button>
+            <button class="btn dinner-btn-list bg-dinner">Dinner Meal</button>
+          </div>
+
+          <div class="table-header text-center"></div>
+          <table class="table">
+            <thead class="table-head">
+              <tr >
+                
+                <th class="table-heading">Meal</th>
+                <th class="table-heading">Calories</th>
+                <th class="table-heading">Date</th>
+                <th class="table-heading">Edit</th>
+              </tr>
+            </thead>
+            <div class="table-row"></div>
+            <tbody class="table-body"></tbody>
+          </table>
+          <p class="message text-center"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

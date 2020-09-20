@@ -1,0 +1,253 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-update-color: #fa9e0a;
+  --bg-delete-color: #ff1c1c;
+  --max-width: 1280px;
+}
+
+$bg-breakfast: #4747df;
+$bg-lunch: #fc9d03;
+$bg-dinner: #88888c;
+
+@function set-text-color($color) {
+  @if (lightness($color) >60) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
+.bg-breakfast {
+  background: $bg-breakfast;
+  color: set-text-color($bg-breakfast);
+}
+.bg-lunch {
+  background: $bg-lunch;
+  color: set-text-color($bg-lunch);
+}
+.bg-dinner {
+  background: $bg-dinner;
+  color: set-text-color($bg-dinner);
+}
+
+.bg-update {
+  background: var(--bg-update-color);
+  color: #fff;
+}
+.bg-delete {
+  background: var(--bg-delete-color);
+  color: #fff;
+}
+
+.ptb-5 {
+  padding: 5px 0;
+}
+.pxx-5 {
+  padding: 0 5px;
+}
+.mtb-5 {
+  margin: 5px 0;
+}
+.mxx-5 {
+  padding-top: 0 5px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+button {
+  width: 9rem;
+  padding: 0.4rem;
+  margin: 1rem 3rem;
+  font: 16px sans-serif;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  overflow: hidden;
+}
+.heading {
+  background: #6b6be3;
+  color: #fff;
+  padding: 1.2rem 0;
+  margin-bottom: 2rem;
+}
+.card {
+  width: 900px;
+  position: relative;
+  left: 0;
+  margin: 2rem auto;
+  // height: 40vh;
+  box-shadow: 2px 2px 2px 2px #f5f5fa, -2px -2px 2px 2px #f5f5fa;
+  // text-align: center;
+  .input-group {
+    display: flex;
+    justify-content: center;
+    .meal-label,
+    .calories-label {
+      background: rgba(159, 165, 172, 0.589);
+      padding: 0.3rem 0.6rem;
+      border: 1px solid #333;
+    }
+    .mealInput,
+    .caloriesInput {
+      border: 1px solid #333;
+      margin: 2rem;
+      input {
+        width: 300px;
+        height: 1.5rem;
+        margin-left: -0.3rem;
+      }
+    }
+  }
+  .add-message {
+    font-size: 20px;
+  }
+  .add-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .delete-update-back-btn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 6fr 0.6fr;
+
+    button {
+      text-align: center;
+      margin: 1rem 0;
+    }
+
+    .delete-update-btn {
+      margin: 0 0.2rem;
+    }
+  }
+
+  .card-body {
+    h2 {
+      padding: 0.8rem 0;
+    }
+
+    .list-buttons {
+      display: flex;
+      justify-content: center;
+      button {
+        font-size: 18px;
+      }
+    }
+
+    table {
+      position: relative;
+      width: 700px;
+      margin-left: 4rem;
+      border: 1px solid;
+
+      td,
+      th {
+        border: 1px solid #333;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:last-child {
+        td:last-child {
+          border: none;
+        }
+      }
+    }
+    .message{
+      color: red;
+      font-size: 20px;
+      padding: 2rem 0;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 700px;
+    margin: 2rem;
+
+    .input-group{
+    .mealInput,
+    .caloriesInput {
+      border: 1px solid #333;
+      margin: 1rem;
+      input {
+        width: 200px;
+        height: 1.5rem;
+        margin-left: -0.3rem;
+      }
+    }
+  }
+    .card-body {
+      table {
+        width: 600px;
+        margin: 1rem 0 2rem 4rem;
+        border: 1px solid;
+      }
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  .card {
+    width: 300px;
+    margin: .5rem auto;
+
+    .input-group{
+      flex-direction: column;
+    .mealInput,
+    .caloriesInput {
+      margin: 10px;
+      border: none;
+      input {
+        width: 200px;
+        height: 1.7rem;
+        margin-left: -0.3rem;
+      }
+    }
+    .mealInput{
+      input{
+        width: 220px;
+      }
+    }
+  }
+  .delete-update-back-btn {
+    button {
+      margin: .3rem 0;
+    }
+  }
+    button {
+      width: 9rem;
+      padding: 0.3rem 0.6rem;
+      margin: 0.3rem;
+      font: 16px sans-serif;
+    }
+  
+    .add-buttons {
+      flex-direction: column;
+      margin-left: 4rem;
+    }
+    .list-buttons {
+      flex-direction: column;
+      margin-left: 4rem;
+    }
+  
+    .card-body {
+      table {
+        width: 200px;
+        margin: 1rem 0 2rem .5rem;
+        border: 1px solid;
+      }
+      padding-bottom: 1rem;
+    }
+  }
+  
+}
