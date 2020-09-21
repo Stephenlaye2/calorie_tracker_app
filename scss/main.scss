@@ -42,19 +42,6 @@ $bg-dinner: #88888c;
   color: #fff;
 }
 
-.ptb-5 {
-  padding: 5px 0;
-}
-.pxx-5 {
-  padding: 0 5px;
-}
-.mtb-5 {
-  margin: 5px 0;
-}
-.mxx-5 {
-  padding-top: 0 5px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -63,7 +50,7 @@ button {
   width: 9rem;
   padding: 0.4rem;
   margin: 1rem 3rem;
-  font: 16px sans-serif;
+  font: 500 17px sans-serif;
 }
 
 .container {
@@ -136,9 +123,6 @@ button {
     .list-buttons {
       display: flex;
       justify-content: center;
-      button {
-        font-size: 18px;
-      }
     }
 
     table {
@@ -160,7 +144,7 @@ button {
         }
       }
     }
-    .message{
+    .message {
       color: red;
       font-size: 20px;
       padding: 2rem 0;
@@ -173,18 +157,18 @@ button {
     width: 700px;
     margin: 2rem;
 
-    .input-group{
-    .mealInput,
-    .caloriesInput {
-      border: 1px solid #333;
-      margin: 1rem;
-      input {
-        width: 200px;
-        height: 1.5rem;
-        margin-left: -0.3rem;
+    .input-group {
+      .mealInput,
+      .caloriesInput {
+        border: 1px solid #333;
+        margin: 1rem;
+        input {
+          width: 200px;
+          height: 1.5rem;
+          margin-left: -0.3rem;
+        }
       }
     }
-  }
     .card-body {
       table {
         width: 600px;
@@ -198,39 +182,38 @@ button {
 
 @media (max-width: 560px) {
   .card {
-    width: 300px;
-    margin: .5rem auto;
+    width: 310px;
+    margin: 0.5rem auto;
 
-    .input-group{
+    .input-group {
       flex-direction: column;
-    .mealInput,
-    .caloriesInput {
-      margin: 10px;
-      border: none;
-      input {
-        width: 200px;
-        height: 1.7rem;
-        margin-left: -0.3rem;
+      .mealInput,
+      .caloriesInput {
+        margin: 10px;
+        border: none;
+        input {
+          width: 200px;
+          height: 1.7rem;
+          margin-left: -0.3rem;
+        }
+      }
+      .mealInput {
+        input {
+          width: 220px;
+        }
       }
     }
-    .mealInput{
-      input{
-        width: 220px;
+    .delete-update-back-btn {
+      button {
+        margin: 0.3rem 0;
       }
     }
-  }
-  .delete-update-back-btn {
     button {
-      margin: .3rem 0;
-    }
-  }
-    button {
-      width: 9rem;
+      width: 10rem;
       padding: 0.3rem 0.6rem;
       margin: 0.3rem;
-      font: 16px sans-serif;
     }
-  
+
     .add-buttons {
       flex-direction: column;
       margin-left: 4rem;
@@ -239,15 +222,14 @@ button {
       flex-direction: column;
       margin-left: 4rem;
     }
-  
+
     .card-body {
       table {
         width: 200px;
-        margin: 1rem 0 2rem .5rem;
+        margin: 1rem 0 2rem 0.5rem;
         border: 1px solid;
       }
       padding-bottom: 1rem;
     }
   }
-  
 }

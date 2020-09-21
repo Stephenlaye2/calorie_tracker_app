@@ -370,7 +370,6 @@ const ItemCtrl = (() => {
       } else if (day > 1) {
         day = `in ${day} days`;
       }
-      console.log(day);
       return day;
     },
     getLunchDayCount: () => {
@@ -389,7 +388,7 @@ const ItemCtrl = (() => {
       } else if (day > 1) {
         day = `in ${day} days`;
       }
-      // console.log(day);
+
       return day;
     },
     getDinnerDayCount: () => {
