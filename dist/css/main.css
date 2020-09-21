@@ -106,10 +106,10 @@ button {
     font-size: 20px;
     padding: 2rem 0; }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .card {
-    width: 700px;
-    margin: 2rem; }
+    width: 680px;
+    margin: 2rem auto; }
     .card .input-group .mealInput,
     .card .input-group .caloriesInput {
       border: 1px solid #333;
@@ -121,9 +121,40 @@ button {
         margin-left: -0.3rem; }
     .card .card-body {
       padding-bottom: 1rem; }
+      .card .card-body .add-buttons {
+        display: flex;
+        justify-content: center; }
+        .card .card-body .add-buttons button {
+          width: auto; }
       .card .card-body table {
         width: 600px;
-        margin: 1rem 0 2rem 4rem;
+        margin: 1rem 0 2rem 3rem;
+        border: 1px solid; } }
+
+@media (max-width: 670px) {
+  .card {
+    width: 550px;
+    margin: 2rem auto; }
+    .card .input-group .mealInput,
+    .card .input-group .caloriesInput {
+      border: 1px solid #333;
+      margin: 1rem; }
+      .card .input-group .mealInput input,
+      .card .input-group .caloriesInput input {
+        width: 150px;
+        height: 1.5rem;
+        margin-left: -0.3rem; }
+    .card .card-body {
+      padding-bottom: 1rem; }
+      .card .card-body .add-buttons {
+        flex-direction: column; }
+      .card .card-body .list-buttons {
+        flex-direction: column; }
+        .card .card-body .list-buttons button {
+          width: auto; }
+      .card .card-body table {
+        width: 520px;
+        margin: 1rem 0 2rem 1rem;
         border: 1px solid; } }
 
 @media (max-width: 560px) {

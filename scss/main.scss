@@ -152,10 +152,10 @@ button {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   .card {
-    width: 700px;
-    margin: 2rem;
+    width: 680px;
+    margin: 2rem auto;
 
     .input-group {
       .mealInput,
@@ -170,9 +170,54 @@ button {
       }
     }
     .card-body {
+      .add-buttons {
+        display: flex;
+        justify-content: center;
+        button {
+          width: auto;
+        }
+      }
       table {
         width: 600px;
-        margin: 1rem 0 2rem 4rem;
+        margin: 1rem 0 2rem 3rem;
+        border: 1px solid;
+      }
+      padding-bottom: 1rem;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .card {
+    width: 550px;
+    margin: 2rem auto;
+
+    .input-group {
+      .mealInput,
+      .caloriesInput {
+        border: 1px solid #333;
+        margin: 1rem;
+        input {
+          width: 150px;
+          height: 1.5rem;
+          margin-left: -0.3rem;
+        }
+      }
+    }
+    .card-body {
+      .add-buttons {
+        flex-direction: column;
+      }
+      .list-buttons {
+        flex-direction: column;
+
+        button {
+          width: auto;
+        }
+      }
+      table {
+        width: 520px;
+        margin: 1rem 0 2rem 1rem;
         border: 1px solid;
       }
       padding-bottom: 1rem;
