@@ -207,9 +207,11 @@ button {
     .card-body {
       .add-buttons {
         flex-direction: column;
+        margin: auto;
       }
       .list-buttons {
         flex-direction: column;
+        margin: auto;
 
         button {
           width: auto;
@@ -217,7 +219,7 @@ button {
       }
       table {
         width: 520px;
-        margin: 1rem 0 2rem 1rem;
+        margin: 1rem auto;
         border: 1px solid;
       }
       padding-bottom: 1rem;

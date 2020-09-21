@@ -147,14 +147,16 @@ button {
     .card .card-body {
       padding-bottom: 1rem; }
       .card .card-body .add-buttons {
-        flex-direction: column; }
+        flex-direction: column;
+        margin: auto; }
       .card .card-body .list-buttons {
-        flex-direction: column; }
+        flex-direction: column;
+        margin: auto; }
         .card .card-body .list-buttons button {
           width: auto; }
       .card .card-body table {
         width: 520px;
-        margin: 1rem 0 2rem 1rem;
+        margin: 1rem auto;
         border: 1px solid; } }
 
 @media (max-width: 560px) {
